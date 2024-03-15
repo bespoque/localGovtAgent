@@ -6,7 +6,6 @@ import Widget from "../widget";
 import Link from "next/link";
 import { SubmitButton } from "../CustomButton/CustomButton";
 import axios from "axios";
-import url from "../../config/url";
 import { FiX, FiCheck } from "react-icons/fi";
 import { Select, SelectMonth } from "../forms/selects";
 import { SampleCsvWithholding, WithholdingInterest } from "../Images/Images";
@@ -14,6 +13,7 @@ import { FiArrowDown } from "react-icons/fi";
 import setAuthToken from "../../functions/setAuthToken";
 import { useRouter } from "next/router";
 import { ProcessorSpinner } from "../spiner/index";
+import url from "../../config/url";
 
 const WithholdingUploadForm = () => {
   //handle file

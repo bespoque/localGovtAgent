@@ -1,0 +1,84 @@
+@import './variables';
+
+.svgwhite {
+    filter: brightness(0) invert(1);
+  }
+  .parent:hover > img {
+     filter: brightness(0) invert(1);
+  }
+  .parent:hover{
+    color: $white
+  }
+
+  .parent:hover > span{
+    color: $white
+  }
+  
+
+#auth{
+    background-image: url('../images/backgrounds/auth-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#login{
+    width: 100%;
+}
+
+#login h1{
+    color: $lightPurple;
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+#login p{
+    color: $textGrey;
+    font-size: 0.875rem;
+}
+#login > .div{
+    display: flex;
+    padding: 0.5rem;
+    border: 1px solid;
+    border-color: $btnBorder;
+    border-radius: 4px;
+}
+#login input{
+    margin-left: 0.5rem;
+}
+
+#login .changeType{
+    color: $primary;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+#login .changeType span{
+    margin-left: 0.5rem;
+    font-size: 0.875rem;
+}
+
+#login .loginButton{
+    background-color: $primary;
+    color: $white;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.625rem 1.5rem;
+    border-radius: 4px;
+}
+
+.input{
+    width: 2.5rem !important;
+    border-radius: 8px !important;
+}
+.email-input{
+    padding: 0.5rem 1.5rem !important;
+}
+.text-xss{
+    font-size: 0.75rem !important;
+}
+.text-smm{
+    font-size: $smallSize !important;
+}
+.bg-primaryy{
+    background-color: #5141a4;
+}

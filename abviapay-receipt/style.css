@@ -1,0 +1,136 @@
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+address {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0 10px;
+}
+body {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+}
+
+footer h4 {
+  font-size: 26px;
+  margin-bottom: 1.2rem;
+}
+
+footer img {
+  width: 150px;
+}
+
+footer span {
+  line-height: 25px;
+}
+
+header {
+  text-align: center;
+  line-height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+h2 {
+  color: emerald;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+h4 {
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 20px;
+}
+
+img {
+  width: 190px;
+}
+
+section {
+  width: 1240px;
+  height: 1754px;
+  padding: 25px 70px;
+  /* border: 2px solid emerald; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  margin: 2rem 0;
+}
+
+.address {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.copy {
+  font-size: 45px;
+  font-weight: 700;
+  color: rgb(240, 240, 240);
+  margin: -1.2rem 0 -3.7rem 0;
+}
+
+.ibeju-logo {
+  width: 140px;
+}
+
+.segment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px dashed black;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border-bottom: 1px solid #ddd;
+  padding: 9px;
+  font-size: 20px;
+}
+
+#customers tr:last-child {
+  background-color: #cbffbb;
+  font-weight: 700;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  font-size: 22px;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}

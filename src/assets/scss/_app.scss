@@ -1,0 +1,45 @@
+@import './variables/app';
+@import './variables';
+@import './components/dropdown';
+@import './components/payslipReceipt';
+@import './components/formControl';
+@import './components/button';
+@import './components/commentCard.scss';
+@import './components/employeeMGTHeader.scss';
+@import './pages/employeemanagement.scss';
+@import './components/employeeMGTCardView.scss';
+@import './components/sidebar';
+@import './components/noInternet';
+@import './reset.scss';
+@import './mixins.scss';
+@import './components/antdOverrideClasses.scss';
+@import './components/customNavCard';
+@import './components/formerSettings';
+@import 'pages/newMessaging.scss';
+@import 'pages/messaging.scss';
+@import './pages/newUserProfile';
+@import './pages//oneonone.scss';
+@import './pages/messagingNav.scss';
+@import './pages/NoInternet.scss'; 
+@import './login.scss';
+@import './pages/landing';
+@import './landing';
+@import './onboarding.scss';
+@import './dashboard.scss';
+@import './dashboard2.scss';
+@import './payroll.scss';
+@import './payrollSetup.scss';
+@import './components/_sideModal.scss';
+@import './pages/exitinterview.scss';
+@import './pages/exitManangement.scss';
+@import './pages/polls.scss';
+@import './pages/survey.scss';
+@import './pages/meetingandnotes.scss';
+
+// 3rd party
+@import 'bootstrap/scss/bootstrap';
+
+
+@import 'react-toastify/dist/ReactToastify.min.css';
+@import 'antd/dist/antd.css';
+@import 'react-vis/dist/style.css';

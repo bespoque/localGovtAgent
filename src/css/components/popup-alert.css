@@ -1,0 +1,36 @@
+/* PopupAlert.css */
+.popup-alert {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 1000;
+  }
+  
+  .popup-alert.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  
+  .error {
+    background-color: #ff6b6b; /* Red */
+  }
+  
+  .success {
+    background-color: #71d874; /* Green */
+  }
+  
+  .warning {
+    background-color: #ffb86c; /* Yellow */
+  }
+  
+  .info {
+    background-color: #63a4ff; /* teal */
+  }
+  

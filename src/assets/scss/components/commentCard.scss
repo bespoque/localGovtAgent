@@ -1,0 +1,25 @@
+.commentCard {
+    .name {
+        font-size: 16px;
+        font-weight: 700px;
+        color: $lightPurple;
+    }
+
+    .date {
+        font-size: 10px;
+        font-weight: 400;
+        color: $textGrey;
+    }
+
+    .role {
+        font-size: 10px;
+        font-weight: 400;
+        color: $primary;
+    }
+
+    .commentP {
+        font-size: 12px;
+        font-weight: 400;
+        color: $textGrey;
+    }
+}

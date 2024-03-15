@@ -1,0 +1,329 @@
+@import "./variables";
+
+.dashboard2 {
+  .section1 {
+    display: grid;
+    grid-template-areas:
+      "section1 section1 section1 section2"
+      "section3 section4 section5 section2"
+      "section6 section6 section6 section2"
+      "section6 section6 section6 section2";
+    gap: 1rem;
+
+    .grid-item {
+      .heading {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        color: $textGrey2;
+      }
+      .amount {
+        color: $textGrey;
+        font-size: 1.75rem;
+        font-weight: 700;
+      }
+      .subtext {
+        display: flex;
+        align-items: center;
+        color: $primary;
+        font-size: $smallSize;
+        margin-top: 1rem;
+
+        img {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    .grid-item-1 {
+      grid-area: section1;
+      background-color: $primary;
+      color: $white;
+      border-radius: 8px;
+      padding: 1.5rem 1.8rem;
+
+      h4 {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: $white;
+      }
+      p {
+        font-size: $smallSize;
+      }
+    }
+
+    .grid-item-2 {
+      grid-area: section2;
+      border-radius: 8px;
+      // padding: 1rem;
+
+      section {
+        background-color: $white;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        padding: 1rem;
+      }
+
+      h6 {
+        font-size: 1rem;
+      }
+      .register {
+        margin: 0;
+        color: $textGrey2;
+        font-size: 0.75rem;
+      }
+      .nextPay {
+        margin-top: 1.5rem;
+        color: $lightPurple;
+        font-size: 0.75rem;
+      }
+    }
+
+    .grid-item-3 {
+      grid-area: section3;
+      background-color: $white;
+      border-radius: 8px;
+      padding: 1rem 1.5em;
+    }
+
+    .grid-item-4 {
+      grid-area: section4;
+      background-color: $white;
+      border-radius: 8px;
+      padding: 1rem 1.5em;
+    }
+
+    .grid-item-5 {
+      grid-area: section5;
+      background-color: $white;
+      border-radius: 8px;
+      padding: 1rem 1.5em;
+    }
+
+    .grid-item-6 {
+      grid-area: section6;
+      background-color: $white;
+      border-radius: 8px;
+      padding: 1rem 1.5em;
+    }
+
+    .grid-item-7 {
+      grid-area: section7;
+      background-color: $white;
+      border-radius: 8px;
+      padding: 1rem 0.8rem;
+    }
+    .countdown {
+      justify-content: space-around;
+      background: $bgGrey;
+      border: 1px solid;
+      border-color: $border;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      margin-top: 0;
+      padding: 1rem 0;
+
+      * {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.625rem;
+        color: $textGrey2;
+        text-transform: uppercase;
+
+        *:first-child {
+          color: $textGrey;
+          font-size: 2rem;
+        }
+      }
+    }
+    .quick-link {
+      display: flex;
+      padding: 0.5rem;
+      background-color: $bgGrey;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      cursor: pointer;
+
+      .mainText {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+
+        p {
+          font-size: 0.75rem;
+          margin: auto 0;
+          margin-left: 0.5rem;
+          align-self: center;
+        }
+      }
+    }
+  }
+
+  .section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+
+    .bullet-list {
+      background: $white;
+      border-radius: 8px;
+      padding: 1.5rem 1rem;
+
+      .bullet-list-header {
+        border-bottom: 1px solid;
+        border-color: $btnBorder;
+        padding-bottom: 0.8rem;
+        font-weight: 700;
+      }
+
+      .bullet-list-item {
+        display: flex;
+        align-items: center;
+        padding: 0.3rem 0;
+
+        .item-texts {
+          display: flex;
+          justify-content: space-between;
+          flex: 1;
+          color: $textGrey2;
+        }
+      }
+
+      .bullet {
+        height: 1rem;
+        width: 1rem;
+        border-radius: 2px;
+        margin-right: 0.8rem;
+      }
+    }
+  }
+}
+
+.form-radio {
+  accent-color: $primary;
+}
+.table {
+  width: 100%;
+  background-color: $white;
+  border-radius: 8px;
+
+  .header {
+    display: flex;
+    font-weight: bold;
+    border-bottom: 1px solid $borderGreyLight;
+    padding: 0.75rem 0.5rem;
+    color: $lightPurple;
+    font-size: 0.75rem;
+  }
+
+  .row {
+    display: flex;
+    border-bottom: 1px solid $borderGreyLight;
+    padding: 0.5rem 0.85rem;
+    font-size: 0.75rem;
+    color: $textGrey;
+  }
+
+  .cell {
+    flex: 1;
+    padding: 0.3rem 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .employee-image {
+    margin: 0 0.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .employee-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .employee-name {
+    font-weight: bold;
+  }
+
+  .employee-position {
+    color: $textGrey2;
+    font-size: 0.625rem;
+  }
+
+  .row1 {
+    display: flex;
+    border-bottom: 1px solid $borderGreyLight;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    color: $textGrey;
+  }
+  .row1:last-child {
+    border-bottom: transparent;
+  }
+
+  .cell1 {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.approved {
+  color: var(--random-colors-4, #00b295);
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  border-radius: 3.8125rem;
+  background: var(--success-500, #f2fdf7);
+  padding: 0.25rem 0.5rem;
+  margin: 0;
+}
+
+.disbursed {
+  border-radius: 3.8125rem;
+  background: var(--primary-100, #f6f5fa);
+  color: var(--primary-600, #5141a4);
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 0;
+  &::after {
+    margin-left: 8px;
+    content: "✓";
+  }
+}
+
+.pending {
+  color: var(--random-colors-9, #bd814a);
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3.8125rem;
+  background: var(--warning-100, #fffef3);
+  margin: 0;
+}
+
+.declined {
+  border-radius: 3.8125rem;
+  background: var(--error-100, #fef6f6);
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+  color: var(--random-colors-1, #fe5f55);
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}

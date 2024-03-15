@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.landing {
+    background-image: url("./../../public/images/landing/bg.jpg"); 
+    background-color: #000000; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.landing-1 {
+    background-image: url("./../../public/images/landing/bg1.jpg"); 
+    background-color: #000000; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.landing-2 {
+    background-image: url("./../../public/images/landing/bg2.jpg"); 
+    background-color: #000000; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.landing-3 {
+    background-image: url("./../../public/images/landing/bg3.jpg"); 
+    background-color: #000000; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.about {
+    background-image: url("./../../public/images/landing/about.svg"); 
+    background-color: #000000; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.onboarding {
+    background-image: url("./../../public/images/onboarding/bg.svg"); 
+    background-color: white; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.welcomeHeader {
+    background-image: url("./../../public/images/backgronds/welcomeHeader.svg"); 
+    background-color: white; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}

@@ -1,0 +1,149 @@
+.manage-exit {
+  .manage-exit-aside-section {
+    margin: 20px 0px;
+
+    .section-header {
+      font-family: "Plus Jakarta Display";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      margin-bottom: 15px;
+
+      color: #14213d;
+    }
+
+    .gray-section-body {
+      padding: 15px 17px;
+
+      width: 100%;
+      height: fit-content;
+
+      border: 1px solid #d0d3d8;
+      box-sizing: border-box;
+      border-radius: 8px;
+      .exit-management-exit-section-obj {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .key {
+          font-family: "Plus Jakarta Text";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 140%;
+          color: #434d64;
+        }
+        .value {
+          font-family: "Plus Jakarta Text";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 140%;
+
+          color: #14213d;
+        }
+      }
+    }
+  }
+
+  .manage-exit-aside-btn-container {
+    .manage-exit-btn {
+      padding: 16px 24px;
+
+      border: 1px solid #a1a6b1;
+      box-sizing: border-box;
+      border-radius: 4px;
+      background-color: #ffffff;
+
+      font-family: "Plus Jakarta Text";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 120%;
+
+      color: $primary;
+    }
+  }
+}
+
+.exit-profile-banner {
+  width: 100%;
+  min-height: 122px;
+  height: fit-content;
+  background: #14213d;
+  border-radius: 8px;
+  display: flex;
+  padding: 30px 30px;
+
+  .user-details-section {
+    .user_name {
+      font-family: "Plus Jakarta Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 120%;
+
+      color: #ffffff;
+    }
+    .user_position {
+      font-family: "Plus Jakarta Text";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+
+      color: #a1a6b1;
+    }
+  }
+
+  .status {
+    padding: 4px 8px;
+    width: fit-content;
+    background: rgba(67, 77, 100, 0.3);
+    /* Copy/500 */
+
+    border: 1px solid #434d64;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-family: "Plus Jakarta Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    /* or 19px */
+
+    /* Background/whitgeg */
+
+    color: #ffffff;
+  }
+}
+
+.manage-exit-accordion {
+  margin: 20px 0px;
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    h5 {
+      font-family: "Plus Jakarta Display";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      color: #14213d;
+      margin-bottom: 0px;
+    }
+  }
+  .accordion-text {
+    font-family: "Plus Jakarta Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #434d64;
+  }
+  .hide {
+    display: none;
+  }
+}

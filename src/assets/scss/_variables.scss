@@ -1,0 +1,80 @@
+$white: #fff;
+$black: #000;
+$border: #eeecf6;
+$primary: #5141a4;
+$primal: #9f96cd;
+$spanPurple: #7b61ff;
+$primaryLight: #7467b6;
+$deepPurple: #110c35;
+$deeperPurple: #090525;
+$sidebarBg: #110c35;
+$lightPurple: #14213d;
+$creamWhite: #f6f5fa;
+$accent: #ecc708;
+$textGrey: #434d64;
+$textGrey2: #727a8b;
+$grey700: #344054;
+$bgGrey: #f6f5fa;
+$borderGrey: #a1a6b1;
+$borderGreyLight: #f3f4f5;
+$emerald: #f04c4c;
+$errorPink: #f69494;
+$btnBorder: #d0d3d8;
+$success: #03d858;
+$accent2: #f9eeb5;
+$bbb: #f3f4f5;
+$bluishInfo: #f3f9fe;
+$infoBorder: #b5daf9;
+
+$sidebar-width: 250px;
+$all-transition: all 0.5s ease;
+
+$bodyPadding: 1rem 3.25rem;
+$sectionPadding: 4rem 3.25rem;
+$sidePadding: 3.25rem;
+
+//font
+$pSize: 1.125rem;
+$smallSize: 0.875rem;
+$bigHeading: 2.5rem;
+
+$buttonRadius: 4px;
+
+$primary-gradient: linear-gradient(49.06deg, #261d57 19.9%, #6554c0 88.46%);
+// CUSTOM THEME
+$theme-colors: (
+  "primary": $primary,
+  "border": $border,
+  "creamWhite": $creamWhite,
+  "deepPurple": $deepPurple,
+  "lightPurple": $lightPurple,
+  "spanPurple": $spanPurple,
+  "greyBg": $bgGrey,
+  "textGrey": $textGrey,
+  "textGrey2": $textGrey2,
+  "borderGreyLight": $borderGreyLight,
+  "emerald": $emerald,
+  "accent2": $accent2,
+  "textGrey3": $borderGrey,
+  "deepestPurple": $sidebarBg,
+  "deepGrey": $btnBorder,
+  "grey700": $grey700,
+  "bbb": $bbb,
+  "primal": $primal,
+  "primaryLight": $primaryLight,
+);
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+/* Optional: show position indicator in emerald */
+// ::-webkit-scrollbar-thumb {
+//   background: $deepPurple;
+// }

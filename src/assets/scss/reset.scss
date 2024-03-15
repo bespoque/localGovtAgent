@@ -1,0 +1,123 @@
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+figure,
+blockquote,
+dl,
+dd,
+input::placeholder {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4, 
+h5,
+h6{
+  color: $lightPurple;
+}
+a, .link {
+  color: inherit !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+a:hover .link:hover {
+  color: inherit !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ul,
+ol[role='list'] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p{
+  margin-bottom: 0px;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: inherit;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  outline: none;
+  display: block;
+  background-color: transparent;
+  
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

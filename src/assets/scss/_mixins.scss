@@ -1,0 +1,55 @@
+@mixin view-height($height) {
+  .vh-#{$height} {
+    min-height: #{$height}vh;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.svg-primary {
+  fill: $primary !important;
+}
+
+.svg-btnBorder {
+  fill: $btnBorder !important;
+}
+
+.text-textGrey2 {
+  color: $textGrey2
+}
+
+// .border.border-primary{
+//   border-color: $primary !important;
+//   color: $primary !important;
+// }
+
+.text-textGrey {
+  color: $textGrey
+}
+
+.txt-primary {
+  color: $primary !important
+}
+
+// @mixin set-opacity($value) {
+//   .opacity-#{$value} {
+//     opacity: #{$value};
+//   }
+// }
+
+// @include set-opacity(5);
+// @include set-opacity("1");
+
+@include view-height(10);
+@include view-height(20);
+@include view-height(30);
+@include view-height(40);
+@include view-height(50);
+@include view-height(60);
+@include view-height(60);
+@include view-height(70);
+@include view-height(80);
+@include view-height(90);
+@include view-height(100);

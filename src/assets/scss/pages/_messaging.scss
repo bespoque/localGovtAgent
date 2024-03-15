@@ -1,0 +1,280 @@
+#Messaging{
+    background-color: $creamWhite;
+    width: 97%;
+    margin: 1rem auto;
+    .contentArea{
+        height: 90vh;
+        
+        .chatBox{
+            height: 100%;
+            width: 100%;
+            background-color: $white;
+            border-radius: 10px;
+            
+            .top{
+                box-shadow: 0px 2px 9px rgba(153, 166, 196, 0.26);
+    
+                .chatName{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $textGrey;
+                }
+    
+                .chatRole{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $textGrey;
+                }
+
+                .scheduleLink{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $primary;
+                }
+
+            }
+            .centerArea{
+                overflow: scroll;
+
+                &::-webkit-scrollbar{
+                    display: none;
+
+                }
+
+                .chatCard{
+                    min-height: 5rem;
+                    width: auto;
+                    max-width: 26rem;
+    
+                    &.receiverCard{
+                        background-color: $primaryLight;
+                        color: $white;
+                        border-radius: 20px 0px 20px 20px;
+    
+                        span{
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+    
+                    }
+    
+                    &.senderCard{
+                        background-color: $creamWhite;
+                        color: $textGrey;
+                        border-radius: 0px 20px 20px 20px;
+    
+                        span{
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+            }
+            .chatTime{
+                font-size: 14px;
+                font-weight: 400;
+                color: $textGrey;
+            }
+            
+
+            .bottom{
+                
+                .messageInputCon{
+                    background-color: #F6F5FA;
+                    border-radius: 20px;
+                    height: 50px;
+
+                    .inputBox{
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+
+                        &:active{
+                            border: none;
+                            outline: none;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+
+        .allChats{
+            height: 100%;
+            width: 26rem;
+
+            .searchCon{
+                background-color: $white;
+                height: 3.75rem;
+                border-radius: 10px;
+
+                .search{
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+
+                    &:active{
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+
+            .filterText{
+                font-size: 14px;
+                font-weight: 400;
+                color: $textGrey;
+                cursor: pointer;
+                
+            }
+            .drop{
+                cursor: pointer;
+            }
+            
+            .filter-card{
+                border-radius: 5px;
+                background-color: white;
+                width: 14%;
+                left: 260px;
+                top: 200px;
+                z-index: 3;
+                position: absolute;
+                p{
+                    padding: 12px;
+                    margin: 0;
+                    font-size: 12px;
+                    color: #434D64;
+                    cursor: pointer;
+                }
+                p:hover{
+                    background-color: #F8FAFC;
+                }
+                p.active{
+                    background-color: #F8FAFC;
+                }
+            }
+
+            .chatListCon{
+                background-color: $white;
+                margin: 0;
+                border-radius: 10px;
+                overflow: scroll;
+                
+                &::-webkit-scrollbar{
+                    display: none;
+
+                }
+
+                .contact{
+                    cursor: pointer;
+                    padding: 20px 24px 0px 24px;
+                    border-bottom: solid 1px #E5E5E5;
+                    border-top: solid 1px #E5E5E5;
+                    display: flex;
+                    justify-content: space-between;
+                    .left-det{
+                        h3{
+                            font-size: 16px;
+                            color: #434D64;
+                            font-weight: bold;
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                    .right-det{
+                        .rounded-para{
+                            background-color: #5141a4;
+                            color: white;
+                            border-radius: 50%;
+                            margin: 0;
+                            align-items: center;
+                            justify-content: center;
+                            display: flex;
+                            padding: 0;
+                            width: 21px;
+                            height: 21px;
+                            font-size: 12px;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+    }
+    .chat-footer{
+        background-color: white !important;
+        display: flex;
+        padding: 34px 40px 24px 40px;
+        gap: 34px;
+
+        p{
+            font-size: 14px;
+            color: #A1A6B1;
+            cursor: pointer;
+        }
+        div{
+            display: flex;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            .comment-image{
+                width: 20px;
+                height: 20px;
+                margin-top: -14px;
+            }
+            .message-image{
+                width: 20px;
+                height: 16px;
+                margin-top: -14px;
+            }
+        }
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    #messaging{
+    }
+    .contentArea{
+        padding: 0px !important;
+        width: 100% !important;
+        justify-content: center;
+        margin: 0px;
+        .container-d{
+            padding: 0 !important;
+            margin: 0px !important;
+            width: 100% !important;
+        }
+        padding: 24px;
+        .chatBox{
+            display: none !important;
+        }
+        .allChats{
+            width: 100%;
+            margin: 0;
+            .chatListCon{
+                .contact{
+                    padding: 0px;
+                    width: 100%;
+                    .left-det{
+                    }
+                    .right-det{
+                    }
+                }
+            }
+        }
+
+    }
+   .chat-footer{
+       display: none !important;
+   }
+}

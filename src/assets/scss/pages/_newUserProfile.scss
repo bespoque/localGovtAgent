@@ -1,0 +1,344 @@
+#newUserProfile {
+  label.custom-control-label::before {
+    box-shadow: none;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: $primary;
+    background-color: $primary;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 400;
+    color: $lightPurple;
+  }
+
+  .navItem {
+    font-size: 14px;
+    font-weight: 400;
+    color: $textGrey2;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+
+    &.active {
+      color: $primary;
+      font-weight: 700;
+      border-bottom: 2px solid $primary;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  input {
+    border: 1px solid $btnBorder !important;
+    border-radius: 4px !important;
+    margin-bottom: 20px !important;
+  }
+
+  input:focus {
+    box-shadow: none;
+  }
+
+  label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #57596c;
+    margin: 0 0 5px 0 !important;
+  }
+
+  .ext-drop {
+    margin-bottom: 20px;
+  }
+
+  .ext-drop div span + div div {
+    height: calc(1.5em + 0.75rem + 2px) !important;
+  }
+
+  .ext-drop input {
+    border: none !important;
+  }
+
+  .left {
+    max-width: 50rem;
+    border-right: 1px solid $btnBorder;
+
+    &.payroll-settings-left {
+      padding: 0 !important;
+
+      .payroll-left-action {
+        padding: 0 30px;
+        border-bottom: 1px solid $btnBorder;
+
+        p {
+          color: $textGrey;
+          font-weight: 700;
+        }
+
+        span {
+          font-size: 12px;
+        }
+
+        input {
+          border-radius: 11px !important;
+          margin: 0 !important;
+        }
+
+        .payroll-datepicker {
+          input {
+            border-radius: 5px !important;
+            width: 100%;
+          }
+        }
+      }
+
+      .titleCon {
+        padding: 0 30px;
+        border-bottom: 1px solid $btnBorder;
+      }
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+      color: $lightPurple;
+    }
+
+    .statusCard {
+      height: 11rem;
+      width: 20rem;
+      background-color: $primary;
+
+      .cardH {
+        font-size: 14px;
+        font-weight: 700;
+        color: $white;
+      }
+
+      .cardDesc {
+        font-size: 12px;
+        font-weight: 400;
+        color: #cbc6e4;
+      }
+
+      .actionBtn {
+        background-color: $white;
+        color: $primary;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+
+    .settingNav {
+      max-width: 20rem;
+
+      .settingNavItem {
+        border-bottom: 1px solid $btnBorder;
+        cursor: pointer;
+
+        .settingNavH {
+          font-size: 16px;
+          font-weight: 700;
+          color: $textGrey;
+        }
+
+        .settingNavDesc {
+          font-size: 14px;
+          font-weight: 400;
+          color: $textGrey2;
+        }
+      }
+
+      .not-active {
+        .settingNavH {
+          color: #a1a6b1;
+          font-size: 14px;
+        }
+
+        .settingNavDesc {
+          font-size: 13px;
+          color: #a1a6b1;
+        }
+      }
+    }
+  }
+
+  .right {
+    ul {
+      border-bottom: 1px solid $btnBorder;
+      padding-bottom: 20px;
+      margin-bottom: 45px;
+    }
+
+    .profileSetting {
+      .titleCon {
+        padding-bottom: 20px !important;
+        border-bottom: 1px solid $btnBorder;
+
+        .title {
+          font-size: 24px;
+          font-weight: 700;
+          color: $lightPurple;
+        }
+      }
+
+      .subTitle {
+        padding-top: 10px !important;
+        font-size: 18px;
+        font-weight: 600;
+        color: $textGrey;
+
+        &.light {
+          font-size: 13px;
+          font-weight: 400;
+          color: $textGrey2;
+        }
+      }
+
+      .actionBtn {
+        &.primary {
+          background-color: $primary;
+          color: white;
+        }
+
+        &.normal {
+          background-color: $white;
+          color: $primary;
+          border: 1px solid $borderGrey;
+        }
+      }
+    }
+  }
+
+  //   Table in User Tab
+  table {
+    .with-checkbox {
+      min-width: 20px;
+    }
+
+    .btns {
+      color: $emerald;
+    }
+  }
+
+  .user-settings {
+    .title-holder {
+      .title-holder-text {
+        h2 {
+          color: $lightPurple;
+          font-weight: 700;
+        }
+
+        p {
+          color: $textGrey;
+        }
+      }
+
+      button {
+        border: 1px solid $primaryLight;
+        color: $primaryLight;
+        background: $white;
+        font-size: 14px;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    .ui-box-holder {
+      overflow-x: scroll;
+      margin-top: 50px;
+
+      .ui-box {
+        min-width: 300px;
+        height: 200px;
+        background: $deepPurple;
+
+        .ui-box-firstRow {
+          h6 {
+            color: $white;
+            font-weight: 600;
+          }
+
+          .profile-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            border: 2px solid #fff;
+            background: #000;
+          }
+
+          .multiple-profile-circle {
+            .profile-circle {
+              margin-left: -10px;
+            }
+          }
+        }
+
+        h5 {
+          color: $white;
+          font-weight: 600;
+        }
+
+        p {
+          color: $borderGrey;
+        }
+
+        a {
+          color: $white;
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.settings-holder {
+  padding: 20px 0;
+}
+
+.settings-holder .left,
+.settings-holder .right {
+  padding: 0 30px !important;
+}
+
+@media screen and (max-width: 760px) {
+  #Settings > div:nth-of-type(2) {
+    flex-direction: column !important;
+  }
+
+  #Settings > div:nth-of-type(2) > div.left {
+    margin-bottom: 30px !important;
+    border-right: none;
+  }
+
+  #Settings > div:nth-of-type(2) > div.left .statusCard {
+    width: 100% !important;
+  }
+
+  #Settings > div:nth-of-type(2) > div.left .settingNav {
+    max-width: 100% !important;
+  }
+
+  #Settings > div:nth-of-type(2) > div.left .settingNav > div {
+    width: 100% !important;
+    // background-color: #000 !important;
+  }
+}
+
+.remEmployee {
+  h6 {
+    font-weight: 700;
+  }
+}
+
+.remEmployeeCancel-btn {
+  border: 1px solid $lightPurple !important;
+  color: $lightPurple !important;
+  background: $white !important;
+}

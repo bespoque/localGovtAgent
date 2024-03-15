@@ -1,0 +1,72 @@
+.btn {
+  border-radius: 4px !important;
+  padding: 10.5px 16px !important;
+  font-family: Plus Jakarta Text;
+  font-weight: normal !important;
+  font-size: 12px !important;
+  box-shadow: none !important;
+  // border: none !important;
+
+  &.btn-sm {
+    padding: 6px 16px !important;
+  }
+
+  &.btn-primary {
+    background: $primary !important;
+    border-color: $primary !important;
+  }
+
+  &.btn-secondary {
+    background: none !important;
+    border-color: $primary !important;
+    color: $primary !important;
+  }
+
+  &.btn-table {
+    border-radius: 2px !important;
+    font-size: 10px !important;
+  }
+}
+
+
+.sideModal-filled-button {
+  padding: 20px 24px;
+  position: static;
+  background: $primary;
+  border-radius: 4px;
+  font-family: Plus Jakarta Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  color: #fff;
+}
+
+.sideModal-clear-button {
+  padding: 20px 24px;
+  position: static;
+  border: 1px solid $primary;
+  border-radius: 4px;
+  font-family: Plus Jakarta Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  color: $primary;
+  background-color: #ffffff;
+  margin: 0px 10px;
+}
+
+.btn-app-primary-filled {
+  background-color: $primary;
+  color: $white;
+}
+
+.btn-app-primary-border {
+  border: 1px solid $primary;
+  color: $primary;
+
+  background: none !important {}
+
+  ;
+}

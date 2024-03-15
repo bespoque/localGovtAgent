@@ -1,0 +1,171 @@
+#sideModal {
+
+    .sideModal {
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        transition: all .2s ease-in-out;
+        transition-delay: .1s;
+
+
+        &.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .sideModalAside::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+        }
+
+        .sideModalAside {
+            position: relative;
+            transition: all .5s ease;
+            transition-delay: .3s;
+            width: 0;
+            height: 100vh;
+            background-color: $white;
+            margin-left: auto;
+            overflow-y: auto;
+            z-index: 10;
+
+            &.show {
+                &.show-wider {
+                    width: 50vw;
+                }
+
+                &.show-widest {
+                    width: 75vw;
+                }
+
+                width: 40vw;
+                padding: 10px 20px;
+                $breakpoint-tablet: 768px;
+
+                @media (max-width: $breakpoint-tablet) {
+                    width: 100% !important;
+                    padding: 0;
+                }
+
+            }
+
+            .sideModalContent {
+                padding: 1rem 2rem;
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: inherit;
+
+                h5 {
+                    font-weight: 800;
+                    color: $lightPurple;
+                }
+
+                .navigation {
+                    small {
+                        cursor: pointer;
+                        color: $textGrey2;
+                        transition: border 0.1s ease-in-out;
+                        border-bottom: 3px solid $white;
+        
+                        &.active {
+                            color: $primary;
+                            border-bottom: 3px solid #5141A4;
+                        }
+                    }
+                }
+
+                form {
+                    label {
+                        font-size: 14px;
+                    }
+                }
+
+                .custom-select {
+                    background: #fff url('../../images/svg/icons/arrowDown.svg') right 0.75rem center/8px 10px no-repeat;
+                    color: $textGrey2;
+                    font-size: 14px;
+                    display: block;
+                }
+
+                .myInput {
+                    color: $textGrey2;
+                    font-size: 14px;
+                }
+
+                .myTextArea {
+                    color: $textGrey2;
+                    font-size: 14px;
+                }
+
+                .modalButton {
+                    width: 48%;
+                }
+
+                .mySelect {
+                    height: 3rem;
+                }
+
+                .custom-file {
+                    border: 2px dotted #A1A6B1;
+                    background-color: $white;
+
+                    border-radius: 8px;
+                    height: 8rem;
+                    position: relative;
+
+                    .inputLabel {
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, 10px);
+                        position: absolute;
+                        top: 0;
+                        margin: 0 auto;
+                        text-align: center;
+
+                        .header {
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: $textGrey;
+                            line-height: 19.2px;
+                            padding: 5px 0;
+                        }
+
+                        .span {
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 16.8px;
+                            padding: 5px 0;
+                            color: $primary;
+                        }
+                    }
+
+                    .custom-file-input {
+                        position: absolute;
+                        z-index: 10;
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                        overflow: hidden;
+                        opacity: 0;
+                        cursor: pointer;
+
+                    }
+                }
+
+
+
+            }
+
+
+        }
+
+    }
+
+}

@@ -1,0 +1,1057 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-text.min.css");
+
+#empMgt-add-employee {
+  padding-top: 44px;
+  padding-bottom: 66px;
+  .ant-select-focused .ant-select-selection,
+  .ant-select-selection:focus,
+  .ant-select-selection:active,
+  .ant-select-open .ant-select-selection {
+    border-color: #d9d9d9;
+    box-shadow: none;
+  }
+  .ant-select-open {
+    box-shadow: none !important;
+  }
+  .controlDropdown {
+    margin-bottom: 16px !important;
+    position: relative !important;
+    min-width: 100% !important;
+  }
+  .dropdown-menu.show {
+    position: absolute !important;
+    width: 100% !important;
+  }
+  .dropdown-item:focus {
+    box-shadow: none !important;
+    background: none !important;
+    color: #212529 !important;
+  }
+  input {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  p.error {
+    font-family: "Plus Jakarta Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: emerald;
+  }
+  input:focus {
+    border: none !important;
+    outline: none !important;
+    border: 1px solid #ced4da !important;
+  }
+  select {
+    position: relative !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding-right: 12px !important;
+  }
+  select:focus {
+    border: none !important;
+    outline: none !important;
+    border: 1px solid #ced4da !important;
+  }
+  textarea {
+    outline: none !important;
+    box-shadow: none !important;
+    padding-right: 12px !important;
+    min-height: 80px !important;
+  }
+  textarea:focus {
+    border: none !important;
+    outline: none !important;
+    border: 1px solid #ced4da !important;
+  }
+
+  div.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    padding: 10px;
+    div.tag {
+      display: flex;
+      align-items: center;
+      font-family: "Plus Jakarta Text";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: -0.01em;
+      color: $primary;
+      padding: 6px 12px;
+      background-color: #eeecf6;
+      border: none;
+      border-radius: 2px;
+      margin-right: 16px;
+      margin-bottom: 8px;
+      span {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+    input {
+      border: none !important;
+      flex: 1;
+      outline: none !important;
+      padding: 5;
+    }
+    input:focus {
+      border: none !important;
+      outline: none !important;
+    }
+  }
+  div.ant-picker {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #d9d9d9 !important;
+    margin-bottom: 16px;
+    // border: none !important;
+  }
+  div.ant-picker-input {
+    input {
+      border: none !important;
+    }
+    input:focus {
+      border: none !important;
+    }
+  }
+  div.ant-picker:focus {
+    border-color: #d9d9d9 !important;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+  div.ant-picker:hover {
+    border-color: #d9d9d9 !important;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+  div.ant-picker:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #d9d9d9 !important;
+  }
+  .ant-select-selector {
+    border: 1px solid #ced4da !important;
+
+    box-shadow: none !important;
+    .ant-select-selection-search {
+      .ant-select-selection-search-input {
+        border: none !important;
+      }
+    }
+    .ant-select-selection-search:focus {
+      border: none !important;
+    }
+    .ant-select-selection-search-input:focus {
+      border: none !important;
+    }
+  }
+  .ant-select-selector:hover {
+    border-color: #ced4da !important;
+    box-shadow: none !important;
+  }
+  .ant-select-selection {
+    box-shadow: none !important;
+  }
+  div.ant-select {
+    margin-bottom: 16px !important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+  }
+  p.error {
+    font-family: "Plus Jakarta Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: emerald;
+  }
+
+  p {
+    font-family: "Plus Jakarta Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #727a8b;
+  }
+  .controlDropdown {
+    margin-bottom: 16px !important;
+    position: relative !important;
+    min-width: 100% !important;
+  }
+  .dropdown-menu.show {
+    position: absolute !important;
+    width: 100% !important;
+  }
+  .dropdown-item:focus {
+    box-shadow: none !important;
+    background: none !important;
+    color: #212529 !important;
+  }
+  input {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  input:focus {
+    border: none !important;
+    outline: none !important;
+    border: 1px solid #ced4da !important;
+  }
+  .ant-picker.ant-picker-large {
+    margin-bottom: 16px !important;
+  }
+  div.btn-container {
+    margin-top: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .cancel {
+      background: #fff;
+      border-radius: 4px;
+      padding: 19.5px 24px;
+      font-family: "Plus Jakarta Text";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      color: $primary;
+      border-radius: 4px;
+      border: 2px solid $primary;
+      margin-right: 24px;
+    }
+    .add {
+      background: $primary;
+      border-radius: 4px;
+      padding: 19.5px 24px;
+      font-family: "Plus Jakarta Text";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      color: #ffffff;
+      border-radius: 4px;
+    }
+  }
+}
+
+.hydrogen-hr-employee-management-header {
+  background-color: #fff;
+  padding: 24px 24px 0 24px;
+  border-radius: 8px;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    h4 {
+      font-family: Plus Jakarta Display;
+      font-weight: 500;
+      font-size: 20px;
+      color: #14213d;
+    }
+    div.flex {
+      display: flex;
+    }
+    p.error {
+      font-family: "Plus Jakarta Text";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 140%;
+      color: emerald;
+      position: absolute;
+      top: 42px;
+      left: 0px;
+    }
+    div.ant-picker {
+      height: 40px !important;
+      outline: none !important;
+      box-shadow: none !important;
+      border-color: #d9d9d9 !important;
+    }
+    div.ant-picker:hover {
+      border-color: #d9d9d9 !important;
+      outline: none !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+    }
+    div.ant-picker:focus {
+      outline: none !important;
+      box-shadow: none !important;
+      border: 1px solid #d9d9d9 !important;
+    }
+    div.ant-picker:focus {
+      border-color: #d9d9d9 !important;
+      outline: none !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+    }
+    div.search {
+      height: 40px;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      display: grid;
+      place-items: center;
+      font-size: 1.25rem;
+      padding-left: 6px;
+      padding-right: 6px;
+      margin-right: 16px;
+      cursor: pointer;
+    }
+    div.mb-3 {
+      margin-bottom: 0px !important;
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .left-header {
+      span {
+        display: inline-block;
+        border-bottom: 2px solid $primary;
+        padding-bottom: 16px;
+        margin-right: 22px;
+        font-family: Plus Jakarta Text;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        color: $primary;
+        cursor: pointer;
+      }
+      #disabled {
+        font-family: Plus Jakarta Text;
+        font-weight: normal;
+        font-size: 14px;
+        color: #727a8b;
+        border-bottom: none;
+      }
+    }
+    .right-header {
+      img {
+        margin-right: 8px;
+      }
+      .img2,
+      .img4 {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.hydrogen-hr-employee-management-header-mobile {
+  padding: 16px 15px 11.67px 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  .top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    justify-content: space-between;
+    h4 {
+      font-family: Plus Jakarta Display;
+      font-weight: 500;
+      font-size: 16px;
+      color: #14213d;
+    }
+    .top-right {
+      .img2 {
+        margin-right: 8px;
+      }
+      .img4 {
+        margin-left: 8px;
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    // margin-bottom: 22px;
+    justify-content: space-between;
+    .select {
+      border: 1px solid #a1a6b1;
+      border-radius: 4px;
+      padding: 8px 8px 8px 8px;
+      margin-right: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 35%;
+      position: relative;
+      span {
+        font-family: Plus Jakarta Text;
+        font-weight: normal;
+        font-size: 14px;
+        color: #727a8b;
+      }
+      .img1 {
+        cursor: pointer;
+      }
+      .option {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 35px;
+        left: 0;
+        background-color: #fff;
+        z-index: 2;
+        width: 100%;
+        border-radius: 8px;
+        padding-top: 8px;
+        padding-bottom: 30px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),
+          0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        .one,
+        .two {
+          padding: 12px 16px;
+        }
+        .one {
+          background: #f6f5fa;
+          font-family: Plus Jakarta Text;
+          font-weight: bold;
+          font-size: 14px;
+          color: #14213d;
+        }
+      }
+    }
+    .bottom-right {
+      .img2 {
+        margin-right: 4px;
+      }
+      .img4 {
+        margin-left: 4px;
+      }
+    }
+  }
+}
+.hydrogen-hr-employee-management-table-responsive {
+  margin-top: 24px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin-bottom: 50px;
+  max-height: 70vh;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow-y: scroll;
+  .infinite-scroll {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    .table-view {
+      background-color: #fff;
+      border-radius: 8px;
+      width: 100%;
+      // min-width: 650px;
+      // max-height: 800px;
+      thead tr {
+        th {
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 16.8px;
+          height: 77px;
+          padding: 0 1rem;
+          border: none;
+          font-family: Plus Jakarta Display;
+          color: $lightPurple;
+          border-bottom: 1px solid $borderGrey;
+          vertical-align: middle;
+        }
+      }
+      tbody tr {
+        td {
+          min-width: 150px;
+          font-family: Plus Jakarta Text;
+          font-weight: normal;
+          font-size: 12px;
+          color: $textGrey;
+          height: 72px;
+          padding: 0 1rem;
+          border-bottom: 1px solid $borderGreyLight;
+          vertical-align: middle;
+          white-space: nowrap;
+        }
+        td.ongoing span {
+          border-radius: 4px;
+          color: #f3aa1c;
+          background: linear-gradient(
+              0deg,
+              rgba(255, 255, 255, 0.9),
+              rgba(255, 255, 255, 0.9)
+            ),
+            #f3aa1c;
+          border: 1px solid #f3aa1c;
+          font-size: 10px;
+          line-height: 140%;
+          font-weight: 600;
+          padding: 4px 6px;
+        }
+        td.completed span {
+          color: #03d858;
+          background: linear-gradient(
+              0deg,
+              rgba(255, 255, 255, 0.9),
+              rgba(255, 255, 255, 0.9)
+            ),
+            #03d858;
+          border: 1px solid #03d858;
+          font-size: 10px;
+          border-radius: 4px;
+          line-height: 140%;
+          font-weight: 600;
+          padding: 4px 6px;
+        }
+        td.pending span {
+          color: #f03738;
+          background: linear-gradient(
+              0deg,
+              rgba(255, 255, 255, 0.9),
+              rgba(255, 255, 255, 0.9)
+            ),
+            #f03738;
+          border: 1px solid #f03738;
+          font-size: 10px;
+          line-height: 140%;
+          font-weight: 600;
+          border-radius: 4px;
+
+          padding: 4px 6px;
+        }
+        td.employee {
+          display: flex;
+          align-items: center;
+          // justify-content: space-between;
+          padding: 16px;
+          .name {
+            // display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+          }
+        }
+        td.employee img {
+          margin-right: 8px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+        td.employee h4 {
+          font-weight: 500;
+          font-size: 12px;
+          letter-spacing: -0.01em;
+          color: #434d64;
+          margin-bottom: 0;
+        }
+        td.employee p {
+          font-family: Plus Jakarta Text;
+          font-weight: normal;
+          font-size: 10px;
+          letter-spacing: -0.01em;
+          color: #727a8b;
+          margin-bottom: 0;
+        }
+        td.btns {
+          font-size: 10px;
+          span {
+            padding: 6px 16px;
+            background: #ffffff;
+            border: 1px solid #d0d3d8;
+            border-radius: 2px;
+            margin-right: 4px;
+            cursor: pointer;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+  .infinite-scroll::-webkit-scrollbar {
+    display: none;
+  }
+}
+.hydrogen-hr-employee-management-table-responsive::-webkit-scrollbar {
+  display: none;
+}
+.fixed_Height_fixedLonger {
+  height: 70vh;
+}
+
+.fixed_Height_fixed {
+  max-height: 500px;
+  margin-bottom: 50px;
+  overflow-y: scroll;
+  .hydrogen-hr-employee-management-grid-view {
+    margin-top: 24px;
+    display: grid;
+    margin-bottom: 24px;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .card {
+      .btn-secondary:hover {
+        // color: #fff;
+        background-color: #fff !important;
+        border-color: #fff !important;
+      }
+      // .btn-secondary :not(:hover) {
+      //   // color: #fff;
+      //   background-color: #fff !important;
+      //   border-color: #fff !important;
+      // }
+      .btn.btn-secondary {
+        background-color: #fff !important;
+
+        border: none !important;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .btn-secondary:focus {
+        border: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+        background-color: #fff !important;
+      }
+      .btn-secondary:active {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        background-color: #fff !important;
+      }
+      padding: 15px;
+      .top {
+        display: flex;
+        align-items: center;
+        .img1 {
+          margin-right: 6px;
+        }
+        p.active {
+          margin-bottom: 0;
+          font-family: Plus Jakarta Text;
+          font-weight: bold;
+          font-size: 12px;
+          color: $success;
+        }
+        p.pending {
+          margin-bottom: 0;
+          font-family: Plus Jakarta Text;
+          font-weight: bold;
+          font-size: 12px;
+          color: $primary;
+        }
+        p.disabled {
+          margin-bottom: 0;
+          font-family: Plus Jakarta Text;
+          font-weight: bold;
+          font-size: 12px;
+          color: #434d64;
+        }
+        p.retired {
+          margin-bottom: 0;
+          font-family: Plus Jakarta Text;
+          font-weight: bold;
+          font-size: 12px;
+          color: #434d64;
+        }
+        p.resigned {
+          margin-bottom: 0;
+          font-family: Plus Jakarta Text;
+          font-weight: bold;
+          font-size: 12px;
+          color: $primary;
+        }
+        p.blocked {
+          margin-bottom: 0;
+          font-family: Plus Jakarta Text;
+          font-weight: bold;
+          font-size: 12px;
+          color: #f04c4c;
+        }
+      }
+      .body {
+        display: grid;
+        place-items: center;
+        img {
+          margin-top: 23px;
+          margin-bottom: 23px;
+        }
+        .name {
+          font-family: Plus Jakarta Text;
+          font-weight: bold;
+          font-size: 16px;
+          color: #434d64;
+          margin-bottom: 4px;
+        }
+        .role {
+          font-family: Plus Jakarta Text;
+          font-weight: normal;
+          font-size: 14px;
+          color: #434d64;
+          background-color: #eeecf6;
+          border-radius: 24px;
+          padding: 2px 16px;
+          // white-space: nowrap;
+          text-align: center;
+        }
+        .email {
+          font-family: Plus Jakarta Text;
+          font-weight: 300;
+          font-size: 14px;
+          color: #7467b6;
+        }
+        .underline {
+          // border: 1px solid #d0d3d8;
+          width: 55%;
+          height: 1px;
+          background-color: #d0d3d8;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .hydrogen-hr-employee-management-grid-view {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .hydrogen-hr-employee-management-grid-view {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    .hydrogen-hr-employee-management-grid-view {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+#hydrogen-hr-employee-management-details {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 6;
+  width: 40%;
+  background-color: #fff;
+  padding: 31px 73px 300px 56px;
+  overflow-y: scroll;
+  .title {
+    font-family: Plus Jakarta Display;
+    font-weight: 500;
+    font-size: 20px;
+    color: #14213d;
+    margin-bottom: 32px;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 66px;
+    h4 {
+      font-family: Plus Jakarta Display;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      color: #14213d;
+    }
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    img {
+      margin-right: 24px;
+    }
+    .profile-details {
+      display: flex;
+      flex-direction: column;
+      .name {
+        font-family: Plus Jakarta Display;
+        font-weight: 500;
+        font-size: 28px;
+        color: #14213d;
+      }
+      .role {
+        font-family: Plus Jakarta Text;
+        font-weight: normal;
+        font-size: 14px;
+        color: #434d64;
+        margin-bottom: 24px;
+      }
+      .salary {
+        font-family: Plus Jakarta Text;
+        font-weight: normal;
+        font-size: 12px;
+        color: #727a8b;
+      }
+    }
+    // justify-content: space-between;
+  }
+  .info {
+    font-family: Plus Jakarta Text;
+    font-weight: normal;
+    font-size: 12px;
+    color: #727a8b;
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 24px;
+      .detail {
+        font-family: Plus Jakarta Text;
+        font-weight: bold;
+        font-size: 14px;
+        color: #434d64;
+      }
+      .left {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+      }
+      .right {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .middle {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 24px;
+      .detail {
+        font-family: Plus Jakarta Text;
+        font-weight: bold;
+        font-size: 14px;
+        color: #434d64;
+      }
+      .left {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+      }
+      .right {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 24px;
+      .detail {
+        font-family: Plus Jakarta Text;
+        font-weight: bold;
+        font-size: 14px;
+        color: #434d64;
+      }
+      .left {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+      }
+      .right {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1350px) {
+  #hygrogen-hr-employee-management-details {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  #hygrogen-hr-employee-management-details {
+    padding: 38px 19px 300px 24px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  #hygrogen-hr-employee-management-details {
+    width: 100vw;
+    .profile {
+      .profile-details {
+        .name {
+          font-size: 20px;
+        }
+        .role {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  #hygrogen-hr-employee-management-details {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #hygrogen-hr-employee-management-details {
+    width: 100vw;
+  }
+}
+.employee-management-modal {
+  .ant-select-selector {
+    border: 1px solid #ced4da !important;
+
+    box-shadow: none !important;
+    .ant-select-selection-search {
+      .ant-select-selection-search-input {
+        border: none !important;
+      }
+    }
+    .ant-select-selection-search:focus {
+      border: none !important;
+    }
+    .ant-select-selection-search-input:focus {
+      border: none !important;
+    }
+  }
+  .ant-select-selector:hover {
+    border-color: #ced4da !important;
+    box-shadow: none !important;
+  }
+  .ant-select-selection {
+    box-shadow: none !important;
+  }
+  div.ant-select {
+    margin-bottom: 16px !important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+  }
+  .ant-select-focused .ant-select-selection,
+  .ant-select-selection:focus,
+  .ant-select-selection:active,
+  .ant-select-open .ant-select-selection {
+    border-color: #d9d9d9;
+    box-shadow: none;
+  }
+  .ant-select-open {
+    box-shadow: none !important;
+  }
+
+  font-family: Plus Jakarta Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #434d64;
+  .ant-slider-track {
+    background-color: $primary !important;
+  }
+  .ant-slider-handle {
+    border: 2px solid $primary !important;
+  }
+
+  h4 {
+    font-family: Plus Jakarta Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #434d64;
+  }
+  label {
+    display: block;
+  }
+  .sex {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f3f4f5;
+    input {
+      margin-left: 22px;
+    }
+  }
+  input {
+    margin-right: 16px;
+  }
+
+  .btns {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    .cancel {
+      border-radius: 4px;
+      background-color: #fff;
+      font-family: Plus Jakarta Text;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: $primary;
+      padding: 19.5px 64.5px;
+      border: 4px;
+      border: 2px solid $primary;
+      margin-right: 8px;
+    }
+    .apply {
+      border-radius: 4px;
+      background-color: $primary;
+      font-family: Plus Jakarta Text;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #fff;
+      padding: 19.5px 64.5px;
+    }
+  }
+}
+
+#boards {
+  h4 {
+    font-family: "Plus Jakarta Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    /* or 43px */
+
+    /* Copy/600 */
+
+    color: #14213d;
+  }
+}
+div.btn-container {
+  margin-top: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .cancel {
+    background: #fff;
+    border-radius: 4px;
+    padding: 19.5px 24px;
+    font-family: "Plus Jakarta Text";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: $primary;
+    border-radius: 4px;
+    border: 2px solid $primary;
+    margin-right: 24px;
+  }
+  .add {
+    background: $primary;
+    border-radius: 4px;
+    padding: 19.5px 24px;
+    font-family: "Plus Jakarta Text";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 4px;
+  }
+}

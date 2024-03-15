@@ -1,0 +1,77 @@
+
+.jobsDashboard-subNav {
+    p {
+    margin: 0;
+    padding: 0;
+  }
+  // min-height: 90px;
+  background: linear-gradient(270deg, #6d5dc1 0%, #5141a4 100%);
+
+  &.whiteTheme {
+    background: $white;
+
+    h6 {
+      color: $primary;
+      font-size: 20px !important;
+      font-weight: 500 !important;
+    }
+
+    ul {
+      li {
+        color: #828282;
+
+        &.active {
+          color: $primary;
+
+          &::after {
+            background-color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  div {
+    .subNav-actions {
+      button {
+        font-size: 14px !important;
+        border-radius: 4px !important;
+      }
+    }
+  }
+
+  h6 {
+    color: $white;
+     font-size: 20px !important;
+      font-weight: 500 !important;
+  }
+
+  ul {
+    overflow-x: scroll !important;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    li {
+      list-style-type: none;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      margin-right: 40px;
+      font-weight: 400;
+      cursor: pointer;
+      min-width: fit-content !important;
+      padding-bottom: 10px;
+
+      &.active {
+        position: relative;
+        color: $white;
+        border-bottom: 2px solid $white;
+        padding-bottom: 10px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+}

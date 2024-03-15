@@ -12,11 +12,10 @@ import {
 import Loader from "react-loader-spinner";
 import UseFetcher from "../fetcher/useFetcher";
 import url from "../../config/url";
-import ReCAPTCHA from "react-google-recaptcha";
 import { verifyCaptcha } from "../../components/reCAPTCHA/ServerActions";
 import { fetchLga } from "../../services/general";
 import { TbCreditCard, TbLockCheck, TbWorldCheck } from "react-icons/tb";
-import { MdOutlinePerson2, MdPassword } from "react-icons/md";
+import { MdPassword } from "react-icons/md";
 import CenteredForm from "../../layouts/centered-form";
 
 import { TbPhoneCheck } from "react-icons/tb";
@@ -148,9 +147,6 @@ const AuthForm = () => {
   }
   return (
     <>
-      {/* {!isValid ? (
-        <AuthSpinner />
-      ) : ( */}
       <>
         <form
           onSubmit={handleSubmit(SubmitHandler)}
@@ -158,25 +154,6 @@ const AuthForm = () => {
           className="px-4"
         >
           <div className="w-full p-1">
-            {/* {errorMessages !== null &&
-              errorMessages.map((errorMessage) => {
-                return (
-                  <p className="text-emerald-500 shadow-md py-2 px-2 border-l-2 border-emerald-500">
-                    {errorMessage}
-                  </p>
-                );
-              })}
-            {isSignUpComplete && (
-              <p className="text-green-500 shadow-md py-2 px-2 border-l-2 border-green-500">
-                Sign up Complete. You may now login with your tax Id and
-                password
-              </p>
-            )}
-            {tokenMessage && (
-              <p className="text-green-500 shadow-md py-2 px-2 border-l-2 border-green-500">
-                {tokenMessage}
-              </p>
-            )} */}
             <CenteredForm
               title="Enter your details to proceed signup"
               subtitle="Proceed Sign up"
@@ -229,7 +206,6 @@ const AuthForm = () => {
                   autoComplete="off"
                   required
                   placeholder="Enter BVN"
-                  // disabled={enableInput}
                   type="Number"
                 />
                 {errors.bvn && errors.bvn.type === "minLength" && (

@@ -6,7 +6,7 @@ import { KgDate } from "../Icons";
 import Input from "../FormInput/formInputs";
 import { SubmitButton } from "../CustomButton/CustomButton";
 import setAuthToken from "../../functions/setAuthToken";
-import url from "../../config/url";
+// import url from "../../config/url";
 import axios from "axios";
 import PopupAlert from "../popup-alert";
 import { PopupModals } from "../modals/Modal";

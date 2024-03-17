@@ -1,13 +1,10 @@
-import { React, useState, useEffect } from "react";
+import { React, useState } from "react";
 import { useForm } from "react-hook-form";
-import Link from "next/link";
-import { FormHeader } from "../FormHeader/FormHeader";
 import { KgDate } from "../Icons";
 import Input from "../FormInput/formInputs";
 import { SubmitButton } from "../CustomButton/CustomButton";
 import setAuthToken from "../../functions/setAuthToken";
 import axios from "axios";
-import PopupAlert from "../popup-alert";
 import { PopupModals } from "../modals/Modal";
 import Loader from "react-loader-spinner";
 import CenteredForm from "../../layouts/centered-form";
@@ -16,6 +13,7 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/router";
+import url from "../../config/url";
 
 const AgentSignUp = () => {
   const { register, handleSubmit, error, watch } = useForm({
@@ -79,8 +77,6 @@ const AgentSignUp = () => {
         router.push("/agent-registration");
       }, 10000);
     } catch (error) {
-      console.log("", error.response?.data);
-      console.log("error", error.response?.data?.message);
       setError(
         error.response?.data?.status == 402
           ? "An error occurred"
@@ -101,7 +97,7 @@ const AgentSignUp = () => {
 
   return (
     <>
-     <ToastContainer />
+      <ToastContainer />
       {showAlert && (
         <PopupModals
           title="ID VERIFICATION"
@@ -245,7 +241,7 @@ const AgentSignUp = () => {
           </CenteredForm>
         </div>
       </form>
-     
+
     </>
   );
 };

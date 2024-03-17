@@ -21,6 +21,7 @@ import { TbPhoneCheck } from "react-icons/tb";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import url from "../../config/url";
 
 const AuthForm = () => {
   //redux state

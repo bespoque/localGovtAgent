@@ -6,7 +6,6 @@ import { KgDate } from "../Icons";
 import Input from "../FormInput/formInputs";
 import { SubmitButton } from "../CustomButton/CustomButton";
 import setAuthToken from "../../functions/setAuthToken";
-// import url from "../../config/url";
 import axios from "axios";
 import PopupAlert from "../popup-alert";
 import { PopupModals } from "../modals/Modal";
@@ -40,18 +39,12 @@ const AgentSignUp = () => {
   const [isFetching, setIsFetching] = useState(() => false);
   const [secondForm, setSecondForm] = useState(() => false);
   const [showAlert, setShowAlert] = useState(false);
-  // const [confirmationMessage, setConfirmationMessage] = useState({
-  //   show: true,
-  //   message: undefined,
-  // });
-
   const handleCloseAlert = () => {
     setShowAlert(!showAlert);
   };
 
   const noId = watch2("src");
 
-  // const idArr = ["BVN", "VOTER-CARD", "DRIVER-LICENSE", "PASSPORT", "NIN"];
   const idArr = ["BVN", "DRIVER-LICENSE", "PASSPORT", "NIN"];
 
   const onSubmit = async (idVal) => {
@@ -64,13 +57,8 @@ const AgentSignUp = () => {
       );
 
       const keys = Object.keys(response.data);
-      console.log("data", response?.data?.message);
       setIsFetching(false);
       setError(null);
-      // setShowAlert(true);
-      // if (response.data.status === true) {
-      // await axios.post(`${url.BASE_URL}user/registration-link`, {phone:,email:idVal.email,id:response.data.id});
-      // }
       if (response?.data?.phone == "") {
         setError("This ID is not associated with any number");
       }
@@ -106,31 +94,14 @@ const AgentSignUp = () => {
           position: toast.POSITION.TOP_CENTER,
         }
       );
-      // setShowAlert(true);
-      // setError(null)
       setIsFetching(false);
     }
   };
 
-  const onSubmitNoID = async (value) => {
-    try {
-      const response = await axios.post(
-        `${url.BASE_URL}user/registration-link`,
-        value
-      );
-
-      if (response?.data?.status === 200) {
-        setSuccess(true);
-      }
-      setApiMessage(response?.data?.message);
-      console.log("Image uploaded successfully:", response.data);
-    } catch (error) {
-      console.error("Error uploading image:", error);
-    }
-  };
 
   return (
     <>
+     <ToastContainer />
       {showAlert && (
         <PopupModals
           title="ID VERIFICATION"
@@ -164,18 +135,6 @@ const AgentSignUp = () => {
                 <option value="BVN" className="m-2 p-8">
                   BVN
                 </option>
-                {/* <option value="VOTER-CARD" className="m-2 p-8">
-                  Voter Card
-                </option> 
-                 <option value="DRIVER-LICENSE" className="m-2 p-8">
-                  Driver License
-                </option>
-                <option value="PASSPORT" className="m-2 p-8">
-                  International Passport
-                </option> */}
-                {/* <option value="NIN" className="m-2 p-8">
-                  NIN
-                </option> */}
               </select>
               {errors.src && (
                 <span className="text-red-500">Select an Id</span>
@@ -286,34 +245,7 @@ const AgentSignUp = () => {
           </CenteredForm>
         </div>
       </form>
-       
-      {/* <div className="mt-8 mx-5 text-center">
-        <div className="text-xs ">
-          <p>
-            Already have an account?
-            <Link legacyBehavior href="/">
-              <a className="text-emerald-500"> Login with your ILID </a>
-            </Link>
-          </p>
-        </div>
-        <div className="text-xs my-1">
-          <p>
-            No ID?
-            <Link legacyBehavior href="/signup-no-id">
-              <a className="text-emerald-500"> Create ILID  without ID</a>
-            </Link>
-          </p>
-        </div>
-        <div className="text-xs">
-          <p>
-            I have ILIDNumber?
-            <Link legacyBehavior href="/signup">
-              <a className="text-emerald-500"> Sign Up with ILID </a>
-            </Link>
-          </p>
-        </div>
-      </div>  */}
-      <ToastContainer></ToastContainer>
+     
     </>
   );
 };

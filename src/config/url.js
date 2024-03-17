@@ -1,6 +1,6 @@
 const url = {
   // BASE_URL: "https://portalapi.ibejulekkilga.com/api/v1/",
-  BASE_URL: "http://kpa.bespoque.ng//api/v1/",
+  BASE_URL: "http://kpa.bespoque.ng/api/v1/",
   // BASE_URL: "https://portalapi.ibeju.centricapps.net/api/v1/",
   // BASE_URL: "http://localhost:3400/api/v1/",
   PAY_URL: "https://portalapi.sandbox.abiapay.com/api/v1/",

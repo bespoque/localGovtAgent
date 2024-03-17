@@ -13,7 +13,6 @@ import UseFetcher from "../fetcher/useFetcher";
 import url from "../../config/url";
 import CenteredForm from "../../layouts/centered-form";
 import { TbCreditCard, TbLockCheck } from "react-icons/tb";
-import ReCAPTCHA from "react-google-recaptcha";
 import { verifyCaptcha } from "../reCAPTCHA/ServerActions";
 
 const SignUpForm = () => {

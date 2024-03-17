@@ -1,5 +1,4 @@
 import { useRef } from "react"
-import ReCAPTCHA from "react-google-recaptcha"
 import { verifyCaptcha } from "./ServerActions"
 import { useRef, useState } from "react"
 

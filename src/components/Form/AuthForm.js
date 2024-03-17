@@ -11,7 +11,6 @@ import {
 } from "../../redux/signup-auth/signup-auth.actions";
 import Loader from "react-loader-spinner";
 import UseFetcher from "../fetcher/useFetcher";
-import { verifyCaptcha } from "../../components/reCAPTCHA/ServerActions";
 import { fetchLga } from "../../services/general";
 import { TbCreditCard, TbLockCheck, TbWorldCheck } from "react-icons/tb";
 import { MdPassword } from "react-icons/md";

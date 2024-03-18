@@ -5,7 +5,7 @@ const SliderContent = () => {
     <div className="bg-gray-900 bg-opacity-75 min-h-screen/20">
       <div className="pt-14 md:space-x-4  block lg:flex flex-row-reverse md:flex-row d:justify-between max-w-6xl mx-auto px-4 lg:px-8">
         <div className="sm-mb-10">
-          {/* <div
+          <div
             className=" inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
             aria-hidden="true"
           >
@@ -16,8 +16,8 @@ const SliderContent = () => {
                   "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
               }}
             />
-          </div> */}
-          {/* <div
+          </div>
+          <div
             className="md:mx-4 md:mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 
           "
           >
@@ -31,7 +31,7 @@ const SliderContent = () => {
                 </a>
               </div>
             </div>
-            <div className="sm:text-center md:text-left px-4 md:px-0">
+            {/* <div className="sm:text-center md:text-left px-4 md:px-0">
               <div className="space-y-3 hidden md:block">
                 <p className="text-3xl md:text-5xl font-bold text-white leading-[120px]">
                   {"Agents Registration for"}
@@ -64,9 +64,9 @@ const SliderContent = () => {
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </div>
-            </div>
-          </div> */}
-          {/* <div
+            </div> */}
+          </div>
+          <div
             className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
             aria-hidden="true"
           >
@@ -77,7 +77,7 @@ const SliderContent = () => {
                   "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
               }}
             />
-          </div> */}
+          </div>
         </div>
         <div className="max-w-sm bg-white flex  h-full shadow-xl border-4 my-auto rounded-xl">
           <LoginForm />

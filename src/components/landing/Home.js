@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <div>
-      <Carousel
+      {/* <Carousel
         autoPlay
         interval={15000}
         infiniteLoop
@@ -41,7 +41,7 @@ export default function Home() {
             <SliderContent />
           </div>
         ))}
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 }

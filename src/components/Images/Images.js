@@ -59,7 +59,7 @@ export const KgirsLogo2 = () => {
   return (
     <Image
       layout="fixed"
-      src="/images/landing/ILIRSlogoSingle.png"
+      src="/images/logo2.png"
       alt="AbiaIrs"
       width={60}
       height={150}

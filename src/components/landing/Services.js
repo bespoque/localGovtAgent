@@ -49,7 +49,7 @@ const Services = () => {
 
   return (
     <div className="w-full pt-16 mx-auto max-w-6xl px-8 md:px-0">
-      <h4 className="font-bold text-center my-8 md:mx-16">
+      {/* <h4 className="font-bold text-center my-8 md:mx-16">
         Access Government Quick links and benefits
       </h4>
       <div className="grid grid-cols-1 mt-8 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:mx-8">
@@ -89,7 +89,7 @@ const Services = () => {
             Learn About Our Policy
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

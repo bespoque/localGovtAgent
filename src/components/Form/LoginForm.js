@@ -62,20 +62,20 @@ const LoginForm = () => {
       className="md:px-4"
     >
       <div className="w-full p-1">
-        <CenteredForm title="Welcome back to ILID Portal" subtitle="Login">
+        <CenteredForm title="Welcome back to KGTIN Portal" subtitle="Login">
           {loginErrors !== null && (
             <p className="text-red-500 shadow-md py-2 px-2 border-l-2 border-red-500">
               {loginErrors}
             </p>
           )}
           {errors.email && errors.email.type === "minLength" && (
-            <p className="text-red-600">ILIDNumber must be 10 digits</p>
+            <p className="text-red-600">KGTIN must be 10 digits</p>
           )}
           {errors.email && errors.email.type === "pattern" && (
-            <p className="text-red-600">ILIDNumber must be numbers</p>
+            <p className="text-red-600">KGTIN must be numbers</p>
           )}
           {errors.email && errors.email.type === "maxLength" && (
-            <p className="text-red-600">ILIDNumber must be 10 digits</p>
+            <p className="text-red-600">KGTIN must be 10 digits</p>
           )}
           {errors.email && (
             <p className="text-red-600 bg-white">{errors.email.message}</p>
@@ -88,13 +88,13 @@ const LoginForm = () => {
               maxLength: 10,
               pattern: {
                 value: /^[0-9]*[.]?[0-9]*$/,
-                message: "ILIDNumber must be a number",
+                message: "KGTIN must be a number",
               },
             })}
             autoComplete="off"
             type="number"
             required
-            placeholder="Enter ILIDNumber"
+            placeholder="Enter KGTIN"
           />
 
           <Input

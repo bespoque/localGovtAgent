@@ -53,7 +53,7 @@ const ForgotPasswordForm = () => {
     <div className="w-full border-none md:mx-auto w-full">
       <CenteredForm
         subtitle="Forgot password"
-        title="Enter ILIDNumber to recover your password"
+        title="Enter KGTIN to recover your password"
       >
         {successMessage !== null && (
           <>
@@ -80,26 +80,26 @@ const ForgotPasswordForm = () => {
                   maxLength: 10,
                   pattern: {
                     value: /^[0-9]*[.]?[0-9]*$/,
-                    message: "ILIDNumber must be a number",
+                    message: "KGTIN must be a number",
                   },
                 })}
                 autoComplete="off"
                 type="text"
                 required
-                placeholder="Enter ILIDNumber"
+                placeholder="Enter KGTIN"
               />
               {errors.state_id && errors.state_id.type === "minLength" && (
                 <p className="text-emerald-600">
-                  ILIDNumber must be 10 digits
+                  KGTIN must be 10 digits
                 </p>
               )}
               {errors.state_id && errors.state_id.type === "maxLength" && (
                 <p className="text-emerald-600">
-                  ILIDNumber must be 10 digits
+                  KGTIN must be 10 digits
                 </p>
               )}
               {errors.state_id && errors.state_id.type === "patter" && (
-                <p className="text-emerald-600">ILIDNumber must be numbers</p>
+                <p className="text-emerald-600">KGTIN must be numbers</p>
               )}
               {errors.state_id && (
                 <p className="text-emerald-600 bg-white">

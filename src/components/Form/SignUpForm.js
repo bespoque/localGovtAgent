@@ -77,7 +77,7 @@ const SignUpForm = () => {
     >
       <div className="w-full">
         <CenteredForm
-          title="Enter your ILID Number to create your account"
+          title="Enter your KGTIN Number to create your account"
           subtitle="Get Started"
         >
           {signUpErrors !== null && (
@@ -89,10 +89,10 @@ const SignUpForm = () => {
           )}
 
           {errors.id && errors.id.type === "minLength" && (
-            <p className="text-red-600">ILIDNumber must be 10 digits</p>
+            <p className="text-red-600">KGTIN must be 10 digits</p>
           )}
           {errors.id && errors.id.type === "maxLength" && (
-            <p className="text-red-600">ILIDNumber must be 10 digits</p>
+            <p className="text-red-600">KGTIN must be 10 digits</p>
           )}
           {errors.id && (
             <p className="text-red-600 bg-white">{errors.id.message}</p>
@@ -114,7 +114,7 @@ const SignUpForm = () => {
               autoComplete="off"
               type="number"
               required
-              placeholder="Enter ILID Number"
+              placeholder="Enter KGTIN Number"
             />
           </div>
 
@@ -144,12 +144,12 @@ const SignUpForm = () => {
               />
               {errors.email && errors.email.type === "minLength" && (
                 <p className="text-red-600">
-                  ILIDNumber must be 10 digits
+                  KGTIN must be 10 digits
                 </p>
               )}
               {errors.email && errors.email.type === "maxLength" && (
                 <p className="text-red-600">
-                  ILIDNumber must be 10 digits
+                  KGTIN must be 10 digits
                 </p>
               )}
               {errors.email && (

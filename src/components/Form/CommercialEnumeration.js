@@ -287,7 +287,7 @@ const CommercialEnumerationForm = ({ onClose }) => {
                 required
                 ref={register()}
                 name="abssin"
-                placeholder="Enter ILIDNumber"
+                placeholder="Enter KGTINNumber"
               />
             </div>
           </div> */}

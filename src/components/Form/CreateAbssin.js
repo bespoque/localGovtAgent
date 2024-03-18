@@ -139,7 +139,7 @@ const CreateAbssin = () => {
       <form autoComplete="off" onSubmit={handleSubmit2(onSubmit)}>
         <div className="w-full p-1">
           <CenteredForm
-            title="Select a means of Identification to create your ILID"
+            title="Select a means of Identification to create your KGTIN"
             subtitle="Welcome back"
           >
             <div className="w-full lg:w-1/8 mt-6">
@@ -147,7 +147,7 @@ const CreateAbssin = () => {
                 for="src"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
-                Create ILID with ID
+                Create KGTIN with ID
               </label>
               <TbCreditCard className="absolute mt-2 z-1 text-2xl text-gray-500 mx-3" />
               <select
@@ -287,7 +287,7 @@ const CreateAbssin = () => {
           <p>
             Already have an account?
             <Link legacyBehavior href="/">
-              <a className="text-teal-500"> Login with your ILID</a>
+              <a className="text-teal-500"> Login with your KGTIN</a>
             </Link>
           </p>
         </div>
@@ -295,15 +295,15 @@ const CreateAbssin = () => {
           <p>
             No ID?
             <Link legacyBehavior href="/signup-no-id">
-              <a className="text-teal-500"> Create ILID without ID</a>
+              <a className="text-teal-500"> Create KGTIN without ID</a>
             </Link>
           </p>
         </div>
         <div className="text-xs">
           <p>
-            I have ILID?
+            I have KGTIN?
             <Link legacyBehavior href="/signup">
-              <a className="text-teal-500"> Sign Up with ILID</a>
+              <a className="text-teal-500"> Sign Up with KGTIN</a>
             </Link>
           </p>
         </div>

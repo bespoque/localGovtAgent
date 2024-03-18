@@ -134,7 +134,7 @@ const Nav = () => {
               href="/create-account"
               className="rounded-md border-2 border-emerald-500 px-3.5 py-2.5 text-sm font-semibold text-emerald-500 shadow-sm hover:bg-emerald-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400 transition transform hover:-translate-y hover:scale-105 duration-30"
             >
-              Create ILID
+              Create KGTIN
             </a>
           </div>
         </div>

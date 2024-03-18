@@ -64,8 +64,8 @@ const CreateNoIDAccount = () => {
           {/* <FormHeader text="Create your ILIDNumber without an ID" /> */}
 
           <CenteredForm
-            title="Create ILIDNumber without an ID"
-            subtitle="Create ILIDNumber"
+            title="Create KGTIN without an ID"
+            subtitle="Create IKGTIN "
           >
             <Input
               label={<MdOutlineAlternateEmail />}
@@ -135,7 +135,7 @@ const CreateNoIDAccount = () => {
 
       {showAlert && (
         <SignUpPopupModals
-          title="Proceed ILIDNumber Signup"
+          title="Proceed KGTIN Signup"
           message={apimessage}
           onClick={handleCloseAlert}
         />

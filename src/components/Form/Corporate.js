@@ -175,7 +175,7 @@ const Corporate = () => {
          <form onSubmit={handleSubmit(validateID)} autoComplete="off" className="w-full md:w-2/3 lg:w-1/2 mx-auto">
          <div className="w-full">
            <FormHeader text="Register as a Business" />
-           <p className="text-coolGray">Enter your ILIDNumber to get started</p>
+           <p className="text-coolGray">Enter your KGTIN Number to get started</p>
            <Input
              name="id"
              id='id'
@@ -184,7 +184,7 @@ const Corporate = () => {
                maxLength: 10,
                pattern: {
                  value: /^[0-9]*[.]?[0-9]*$/,
-                 message: "ILIDNumber must be a number",
+                 message: "KGTIN Number must be a number",
                },
              })}
              label={<KgtinIcon />}

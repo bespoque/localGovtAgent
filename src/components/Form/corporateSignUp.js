@@ -58,7 +58,7 @@ const CorporateSignUpForm = () => {
       <form onSubmit={handleSubmit(validateID)} autoComplete="off">
         <div className="w-full">
           <CenteredForm
-            title=" Enter your ILID Number to create your Business account"
+            title=" Enter your KGTIN Number to create your Business account"
             subtitle="Create Business Account"
           >
             {/* <FormHeader text="Get Started" /> */}
@@ -75,23 +75,23 @@ const CorporateSignUpForm = () => {
                   maxLength: 10,
                   pattern: {
                     value: /^[0-9]*[.]?[0-9]*$/,
-                    message: "ILID  must be a number",
+                    message: "KGTIN  must be a number",
                   },
                 })}
                 autoComplete="off"
                 required
-                placeholder="Enter ILID"
+                placeholder="Enter KGTIN"
                 // disabled={enableInput}
                 type="text"
               />
               {errors.id && errors.id.type === "minLength" && (
                 <p className="text-emerald-600">
-                  ILIDNumber must be 10 digits
+                  KGTIN Number must be 10 digits
                 </p>
               )}
               {errors.id && errors.id.type === "maxLength" && (
                 <p className="text-emerald-600">
-                  ILIDNumber must be 10 digits
+                  KGTIN Number must be 10 digits
                 </p>
               )}
               {errors.id && (

@@ -140,7 +140,7 @@ const InstantPaymentForm = () => {
         setLoggedIn(true);
       } catch (error) {
         if (error?.response?.data?.message?.state_id == "state_id is invalid") {
-          setErrormsg("Incorrect ILID, Kindly enter a valid ILID");
+          setErrormsg("Incorrect KGTIN, Kindly enter a valid KGTIN");
         }
       }
     } else if (state?.method == "Payment Reference") {
@@ -181,7 +181,7 @@ const InstantPaymentForm = () => {
           error?.response?.data?.message?.payment_ref ==
           "payment_ref is invalid"
         ) {
-          setErrormsg("Incorrect ILID, Kindly enter a valid ILID");
+          setErrormsg("Incorrect KGTIN, Kindly enter a valid KGTIN");
         }
       }
     } else if (state?.method == "Download") {
@@ -476,7 +476,7 @@ const InstantPaymentForm = () => {
           error?.response?.data?.message?.payment_ref ==
           "payment_ref is invalid"
         ) {
-          setErrormsg("Incorrect ILID, Kindly enter a valid ILID");
+          setErrormsg("Incorrect KGTIN, Kindly enter a valid KGTIN");
         }
       }
     } else {
@@ -602,7 +602,7 @@ const InstantPaymentForm = () => {
                 <>
                   <SectionTitle
                     title="Make Instant Payment"
-                    subtitle="Enter ILID Number"
+                    subtitle="Enter KGTIN Number"
                   />
                   {errormsg && (
                     <p className="border-red-500 border-l-2 text-red-500 p-2">
@@ -617,7 +617,7 @@ const InstantPaymentForm = () => {
                     maxLength: 10,
                     pattern: {
                       value: /^[0-9]*[.]?[0-9]*$/,
-                      message: "ILID must be a number",
+                      message: "KGTIN must be a number",
                     },
                   })}
                   label={<TbCreditCard />}
@@ -628,10 +628,10 @@ const InstantPaymentForm = () => {
                   type="Number"
                 />
                 {errors2.id && errors2.id.type === "minLength" && (
-                  <p className="text-red-600">ILID must be 10 digits</p>
+                  <p className="text-red-600">KGTIN must be 10 digits</p>
                 )}
                 {errors2.id && errors2.id.type === "maxLength" && (
-                  <p className="text-red-600">ILID must be 10 digits</p>
+                  <p className="text-red-600">KGTIN must be 10 digits</p>
                 )}
                 {errors2.id && (
                   <p className="text-red-600 bg-white">{errors2.id.message}</p>
@@ -1374,7 +1374,7 @@ const InstantPaymentForm = () => {
                 </div>
                 <table id="customers">
                   <tr>
-                    <td>ILID/Payment Reference:</td>
+                    <td>KGTIN/Payment Reference:</td>
                     <td>{state?.paymentRefDetails?.payment_ref}</td>
                   </tr>
 

@@ -13,7 +13,7 @@ const Services = () => {
     {
       imgSrc: "/images/landing/coins.svg",
       icon: <HiOutlineUserAdd className="text-4xl text-emerald-500" />,
-      heading: "Create Personal ILID",
+      heading: "Create Personal KGTIN",
       firstText: "Pay demand notices",
       secondText: "and income tax in one place",
       link: "/create-account",
@@ -21,7 +21,7 @@ const Services = () => {
     {
       imgSrc: "/images/landing/coins.svg",
       icon: <HiOutlineShoppingCart className="text-4xl text-emerald-500" />,
-      heading: "Create Business ILID",
+      heading: "Create Business KGTIN",
       firstText: "Pay demand notices",
       secondText: "and income tax in one place",
       link: "/nonindividual-signup",
@@ -38,7 +38,7 @@ const Services = () => {
       imgSrc: "/images/landing/coins.svg",
       icon: <HiOutlineUserCircle className="text-4xl text-emerald-500" />,
       heading: "Register as an Agent",
-      firstText: "Verify ILID and seamlessly",
+      firstText: "Verify KGTIN and seamlessly",
       secondText: "make payment for utilities",
       link: "/agent-signup",
     },

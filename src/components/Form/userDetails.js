@@ -217,7 +217,7 @@ const UserDetails = () => {
   return (
     <>
       <h1 className="text-xl md:text-xl lg:text-3xl font-bold mx-2 text-center">
-        New ILIDNumber Creation
+        New KGTIN Creation
       </h1>
       <div className="flex justify-center mt-4 border p-3 w-full shadow-xl mb-40 bg-white rounded-xl">
         <form

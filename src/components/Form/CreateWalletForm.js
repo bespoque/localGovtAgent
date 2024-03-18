@@ -239,7 +239,7 @@ const CreateWalletForm = () => {
             <div className="flex flex-col lg:flex-row lg:flex-wrap w-full lg:space-x-4">
               <div className="w-full lg:w-1/4">
                 <NewFormInput
-                  label="ILIDNumber ID"
+                  label="KGTIN ID"
                   readOnly={true}
                   required
                   ref={register}
@@ -314,7 +314,7 @@ const CreateWalletForm = () => {
                             <div className="p-2 text-sm">
                               <section className="flex flex-col space-y-2 border-2 rounded-xl w-full shadow-md p-6 md:space-y-4 ">
                                 <div className="flex justify-between">
-                                  <p className="text-gray-500">ILIDNumber</p>
+                                  <p className="text-gray-500">KGTIN</p>
                                   <p className="font-bold">{dat.KGTIN}</p>
                                 </div>
                                 <div className="flex justify-between">

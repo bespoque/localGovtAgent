@@ -170,12 +170,12 @@ const AuthForm = () => {
               />
               {errors.kgtin && errors.kgtin.type === "minLength" && (
                 <p className="text-emerald-600">
-                  ILIDNumber or TIN must be 10 digits
+                  KGTIN Number or TIN must be 10 digits
                 </p>
               )}
               {errors.kgtin && errors.kgtin.type === "maxLength" && (
                 <p className="text-emerald-600">
-                  ILIDNumber or TIN must be 10 digits
+                  KGTIN Number or TIN must be 10 digits
                 </p>
               )}
 

@@ -21,7 +21,7 @@ const SliderContent = () => {
             className="md:mx-4 md:mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 
           "
           >
-            <div className="hidden max-w-lg md:block sm:mb-8 sm:flex sm:justify-center md:justify-start">
+            {/* <div className="hidden max-w-lg md:block sm:mb-8 sm:flex sm:justify-center md:justify-start">
               <div className="relative rounded-full px-3 py-1 text-xs md:text-sm text-gray-300 ring-1 ring-white/10 hover:ring-white/20">
                 Announcing our Agents recruitment, 2024.{" "}
                 <a href="/create-account" className="font-semibold text-white">
@@ -30,7 +30,7 @@ const SliderContent = () => {
                   <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>
-            </div>
+            </div> */}
             {/* <div className="sm:text-center md:text-left px-4 md:px-0">
               <div className="space-y-3 hidden md:block">
                 <p className="text-3xl md:text-5xl font-bold text-white leading-[120px]">

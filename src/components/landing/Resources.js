@@ -24,9 +24,6 @@ const Resources = () => {
           <div className="w-16 h-1 bg-gray-200"></div>
           <h4 className="text-sm uppercase">Resources</h4>{" "}
         </div>
-        {/* <button className="px-5 py-3 bg-gray-50 border-2 border-teal-400 rounded-lg hover:bg-teal-200 font-bold">
-          View all resources
-        </button> */}
       </div>
 
       <div className="grid grid-cols-1 mt-8 md:grid-cols-2 gap-4 sm:mx-8">

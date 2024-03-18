@@ -70,7 +70,7 @@ const Nav = () => {
     <header className="absolute inset-x-0 top-0 z-50">
       <div className="w-full h-10 bg-emerald-600 font-bold text-xs md:text-sm text-white flex items-center justify-center md:justify-end px-6 py-4 lg:px-8">
         <Image src="/nigeria-icon.png" alt="My Image" width={20} height={30} />
-        <p className="mx-2 font-normal ">Lagos, Nigeria:</p>
+        <p className="mx-2 font-normal ">Kogi, Nigeria:</p>
         {currentTime}
       </div>
       <nav
@@ -86,13 +86,13 @@ const Nav = () => {
                 {/* <IbejuLekkiLogoSm /> */}
                 <div className="text-justify leading-2">
                   <p className="uppercase text-emerald-600 text-xl font-bold">
-                    Ibeju Lekki
+                    Kogi State 
                   </p>
                   <p className="uppercase text-emerald-600 text-sm font-bold -mt-2">
-                    Local Government
+                   Government
                   </p>
                   <p className="uppercase text-xs text-yellow-400 -mt-1">
-                    igando-oloja
+                    Internal-Revenue Service
                   </p>
                 </div>
               </div>

@@ -44,7 +44,18 @@ export const IbejuLekkiLogo = () => {
     />
   );
 };
-export const IbejuLekkiLogoSm = () => {
+// export const IbejuLekkiLogoSm = () => {
+//   return (
+//     <Image
+//       layout="fixed"
+//       src="/images/landing/ILIRSlogoSingle.png"
+//       alt="AbiaIrs"
+//       width={60}
+//       height={150}
+//     />
+//   );
+// };
+export const KgirsLogo2 = () => {
   return (
     <Image
       layout="fixed"
@@ -55,17 +66,7 @@ export const IbejuLekkiLogoSm = () => {
     />
   );
 };
-export const KgirsLogo2 = () => {
-  return (
-    <Image
-      layout="fixed"
-      src="/images/logo2.png"
-      alt="login"
-      width={60}
-      height={60}
-    />
-  );
-};
+
 export const CoatOfArms = () => {
   return (
     <Image

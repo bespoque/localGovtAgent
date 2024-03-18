@@ -15,7 +15,6 @@ import Loader from "react-loader-spinner";
 import CenteredForm from "../../layouts/centered-form";
 import { TbCreditCard, TbLockCheck } from "react-icons/tb";
 
-
 const LoginForm = () => {
   const dispatch = useDispatch();
   const router = useRouter();

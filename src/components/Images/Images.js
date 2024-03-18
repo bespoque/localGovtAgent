@@ -37,13 +37,24 @@ export const IbejuLekkiLogo = () => {
   return (
     <Image
       layout="fixed"
-      src="/images/landing/ILIRSlogoSingle.png"
+      src="/images/logo2.png"
       alt="AbiaIrs"
       width={100}
       height={150}
     />
   );
 };
+// export const IbejuLekkiLogo = () => {
+//   return (
+//     <Image
+//       layout="fixed"
+//       src="/images/landing/ILIRSlogoSingle.png"
+//       alt="AbiaIrs"
+//       width={100}
+//       height={150}
+//     />
+//   );
+// };
 // export const IbejuLekkiLogoSm = () => {
 //   return (
 //     <Image

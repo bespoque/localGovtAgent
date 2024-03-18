@@ -27,7 +27,7 @@ export default function Home() {
   };
 
   return (
-    <div className="h-3/4">
+    <div>
       <Carousel
         autoPlay
         interval={15000}
@@ -37,7 +37,7 @@ export default function Home() {
         showStatus={false}
       >
         {myArray.map((item, index) => (
-          <div key={index} className={`${item} min-h-screen/30`}>
+          <div key={index} className={`${item} min-h-screen/60`}>
             <SliderContent />
           </div>
         ))}

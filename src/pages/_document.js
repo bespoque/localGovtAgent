@@ -11,7 +11,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta charSet="utf-8" />
-          <meta name="description" content="Ibeju Lekki self portal" />
+          <meta name="description" content="KGIRS Local government self portal" />
           <link rel="icon" type="image/png" sizes="192x192" href="/fav.png" />
 
           <link rel="manifest" href="/manifest.json" />

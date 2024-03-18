@@ -37,7 +37,7 @@ export default function Home() {
         showStatus={false}
       >
         {myArray.map((item, index) => (
-          <div key={index} className={`${item} min-h-screen/30`}>
+          <div key={index} className={`${item} h-3/4`}>
             <SliderContent />
           </div>
         ))}

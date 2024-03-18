@@ -63,7 +63,7 @@ const Services = () => {
 
             <a
               href={quickLink.link}
-              className="mt-4 w-full flex items-center justify-center space-x-3 text-white py-3 rounded focus:outline-none text-dark bg-emerald-600 hover:bg-gray-700 focus:ring-4 focus:ring-emerald-400 rounded-lg text-sm"
+              className="mt-4 w-full flex items-center justify-center space-x-3 text-white py-3 rounded focus:outline-none text-white bg-gray-400 hover:bg-emerald-700 focus:ring-4 focus:ring-emerald-400 rounded-lg text-sm"
             >
               <sapn className="text-[14px] font-bold ">Proceed</sapn>
               <MdOutlineArrowForwardIos />

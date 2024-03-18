@@ -27,8 +27,8 @@ export default function Home() {
   };
 
   return (
-    <div className="my-96">
-      {/* <Carousel
+    <div>
+      <Carousel
         autoPlay
         interval={15000}
         infiniteLoop
@@ -37,13 +37,11 @@ export default function Home() {
         showStatus={false}
       >
         {myArray.map((item, index) => (
-          <div key={index} className={`${item} `}>
-          <SliderContent />
+          <div key={index} className={`${item} min-h-screen/30`}>
+            <SliderContent />
           </div>
-          ))}
-        </Carousel> */}
-        <SliderContent />
-
+        ))}
+      </Carousel>
     </div>
   );
 }

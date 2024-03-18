@@ -71,7 +71,7 @@ const Navbar = () => {
         >
           <p>
             {" "}
-            ILIDNumber:{" "}
+            KGTIN:{" "}
             <span className="font-bold">
               {isCopied ? "COPIED!" : copiedText}
             </span>

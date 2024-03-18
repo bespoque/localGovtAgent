@@ -171,7 +171,7 @@ const NewPaymentForm = () => {
     try {
       const response = await axios.post(`${url.BASE_URL}wallet/balance`);
       setWalletBalance(response.data.balance);
-    } catch (error) {}
+    } catch (error) { }
   };
 
   const paymentCallback = async (response) => {
@@ -417,12 +417,12 @@ const NewPaymentForm = () => {
 
       <Widget
         title=""
-        // description={
-        //   <span>
-        //     Note that all fields with asterisk (
-        //     <span className="text-emerald-500">*</span>) must be completed
-        //   </span>
-        // }
+      // description={
+      //   <span>
+      //     Note that all fields with asterisk (
+      //     <span className="text-emerald-500">*</span>) must be completed
+      //   </span>
+      // }
       >
         <form onSubmit={handleSubmit(SubmitHandler)} className="p-3 md:p-12">
           <div>
@@ -438,7 +438,7 @@ const NewPaymentForm = () => {
             <div className="flex flex-col lg:flex-row lg:flex-wrap w-full lg:space-x-4">
               <div className="w-full lg:w-1/4">
                 <NewFormInput
-                  label="ILIDNumber ID"
+                  label="KGTIN"
                   readOnly={true}
                   required
                   ref={register}
@@ -501,9 +501,8 @@ const NewPaymentForm = () => {
                   label="Residential Address"
                   required
                   ref={register}
-                  value={`${
-                    data?.taxPayerInfo?.address?.substr(0, 44) ?? ""
-                  }...`}
+                  value={`${data?.taxPayerInfo?.address?.substr(0, 44) ?? ""
+                    }...`}
                   name="address"
                   readOnly={true}
                 />
@@ -694,7 +693,7 @@ const NewPaymentForm = () => {
                             <div className="p-2 text-sm">
                               <section className="flex flex-col space-y-2 border-2 rounded-xl w-full shadow-md p-6 md:space-y-4 ">
                                 <div className="flex justify-between">
-                                  <p className="text-gray-500">ILIDNumber</p>
+                                  <p className="text-gray-500">KGTIN</p>
                                   <p className="font-bold">{dat.KGTIN}</p>
                                 </div>
                                 <div className="flex justify-between">
@@ -769,25 +768,6 @@ const NewPaymentForm = () => {
                   ) : (
                     <></>
                   )}
-
-                  {/* {loadingState !== "Payment Generated" ? (
-                    <button
-                      className="disabled:cursor-not-allowed btn btn-default btn-rounded bg-white hover:bg-gray-100 text-gray-900"
-                      type="button"
-                      onClick={hide}
-                      disabled={loading}
-                    >
-                      Cancel
-                    </button>
-                  ) : (
-                    <button
-                      className="disabled:cursor-not-allowed btn btn-default btn-rounded bg-white hover:bg-gray-100 text-gray-900"
-                      type="button"
-                      onClick={hide}
-                    >
-                      Close
-                    </button>
-                  )} */}
                 </div>
               </div>
             </div>

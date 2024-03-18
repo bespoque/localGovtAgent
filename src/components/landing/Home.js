@@ -38,10 +38,12 @@ export default function Home() {
       >
         {myArray.map((item, index) => (
           <div key={index} className={`${item} `}>
-            <SliderContent />
+          <SliderContent />
           </div>
-        ))}
-      </Carousel> */}
+          ))}
+        </Carousel> */}
+        <SliderContent />
+
     </div>
   );
 }

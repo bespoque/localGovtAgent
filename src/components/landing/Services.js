@@ -1,9 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import { BsShopWindow } from "react-icons/bs";
 import { HiOutlineCash } from "react-icons/hi";
 import {
-  MdOutlineRealEstateAgent,
   MdOutlineArrowForwardIos,
 } from "react-icons/md";
 import {
@@ -74,7 +71,7 @@ const Services = () => {
           </div>
         ))}
       </div>
-      <div className="about flex flex-col items-center justify-center h-64 rounded-xl mt-16 sm:mx-8">
+      {/* <div className="about flex flex-col items-center justify-center h-64 rounded-xl mt-16 sm:mx-8">
         <h5 className="font-bold text-white text-center text-xl md:text-3xl">
           Access Government Quick links and benefits
         </h5>
@@ -89,7 +86,7 @@ const Services = () => {
             Learn About Our Policy
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

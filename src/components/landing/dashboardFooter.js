@@ -5,7 +5,7 @@ export default function DashboardFooter() {
 
   return (
     <footer className="" aria-labelledby="footer-heading">
-      <h2 id="footer-heading" className="sr-only">
+      {/* <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
       <div className="mx-auto max-w-6xl px-6 pb-8 sm:p-8 lg:px-8 lg:pt-12">
@@ -15,7 +15,7 @@ export default function DashboardFooter() {
             reserved.
           </p>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 }

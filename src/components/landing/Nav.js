@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog } from "@headlessui/react";
-import { IbejuLekkiLogoSm } from "../Images/Images";
+import { IbejuLekkiLogoSm, KgirsLogo2 } from "../Images/Images";
 
 const Nav = () => {
   const navs = [
@@ -82,7 +82,8 @@ const Nav = () => {
             <span className="sr-only">Your Company</span>
             <a href="/">
               <div className="flex space-x-3 items-center">
-                <IbejuLekkiLogoSm />
+                <KgirsLogo2 />
+                {/* <IbejuLekkiLogoSm /> */}
                 <div className="text-justify leading-2">
                   <p className="uppercase text-emerald-600 text-xl font-bold">
                     Ibeju Lekki

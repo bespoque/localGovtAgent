@@ -27,7 +27,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="my-96">
       {/* <Carousel
         autoPlay
         interval={15000}

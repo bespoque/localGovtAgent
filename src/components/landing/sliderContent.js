@@ -4,7 +4,7 @@ const SliderContent = () => {
   return (
     <div className="bg-gray-900 bg-opacity-75 min-h-screen/20">
       <div className="pt-14 md:space-x-4  block lg:flex flex-row-reverse md:flex-row d:justify-between max-w-6xl mx-auto px-4 lg:px-8">
-        <div className="sm-mb-10">
+        {/* <div className="sm-mb-10">
           <div
             className=" inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
             aria-hidden="true"
@@ -78,7 +78,7 @@ const SliderContent = () => {
               }}
             />
           </div>
-        </div>
+        </div> */}
         <div className="max-w-sm bg-white flex  h-full shadow-xl border-4 my-auto rounded-xl">
           <LoginForm />
         </div>

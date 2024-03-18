@@ -74,7 +74,7 @@ const Layout1 = ({ children }) => {
       ) : (
         <>
           <Head>
-            <title>IBEJU-LEKKI IRS</title>
+            <title>KGIRS Local Government self portal</title>
           </Head>
           <div
             data-layout={layout}
